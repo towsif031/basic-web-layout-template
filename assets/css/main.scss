@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+	height: 100%; /* necessary for footer positioning */
+}
+
+body {
+	color: #333;
+}
+
+.container {
+	min-height: 100%; /* necessary for footer positioning */
+	position: relative; /* necessary for footer positioning */
+
+	.header {
+		padding: 10px;
+		text-align: center;
+		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+
+		h2 {
+			line-height: 30px;
+		}
+	}
+
+	.content-wrapper {
+		padding-bottom: 40px; /* height of the footer. necessary for footer positioning */
+		display: flex;
+		justify-content: center;
+
+		.content {
+			padding: 20px;
+
+			h2 {
+				text-align: center;
+				line-height: 30px;
+				padding-bottom: 10px;
+			}
+
+			h4 {
+				padding: 0 20px;
+				text-align: center;
+				font-style: italic;
+			}
+
+			hr {
+				margin: 10px 60px;
+			}
+
+			p {
+				padding: 0 30px;
+				text-align: justify;
+				max-width: 1000px;
+			}
+		}
+	}
+
+	.footer {
+		position: absolute; /* necessary for footer positioning */
+		bottom: 0; /* necessary for footer positioning */
+		width: 100%; /* necessary for footer positioning */
+		height: 40px; /* height of the footer. necessary for footer positioning */
+		background: #fff;
+		border-top: 1px solid rgba(50, 50, 50, 0.2);
+
+		p {
+			margin: 0;
+			padding: 11px 0 12px 0;
+			text-align: center;
+			font-size: 14px;
+		}
+	}
+}
